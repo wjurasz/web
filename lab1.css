@@ -1,15 +1,12 @@
 /* zad1 */
-nav {
-    display: flex;
-    justify-content: space-between;
-}
 
 /* telefon */
-@media (max-width: 600px){
+@media (max-width: 650px){
     nav {
         flex-direction: column;
+        display: flex;
     }
-    .grid-container {
+    .img-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         grid-template-rows: repeat(1, 1fr);    
@@ -20,35 +17,71 @@ nav {
 
 /* komputer */
 @media (min-width: 1201px){
-    .grid-container {
+    .img-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(2, 1fr);    
         gap: 1px; 
       }
-      
-      .grid-container img {
+     .img-container img {
         width: 100%;
         height: auto;
         object-fit: cover;
       }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+   
+   
+    
+     
+    
 }
 /* tablet */
-@media (min-width: 601px) and (max-width:1200px){
+@media (min-width: 651px) and (max-width:1200px){
     nav {
         flex-direction: column;
     }
-    .grid-container {
+    .img-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(1, 1fr);    
         gap: 1px; 
       }
       body {background-color: aqua;}
-}
+
 .container{
     display: flex;
     justify-content: space-evenly;
      
      gap: 1px; 
+}
+}
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.card  {
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        background: rgb(126,122,208);
+        background: linear-gradient(90deg, rgba(126,122,208,1) 11%, rgba(152,150,217,1) 35%, rgba(98,96,230,1) 70%);
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        outline: 3px solid black;
+        gap: 10;
+      
+}
+.card h1{
+    display: flex;
+    justify-content: center;
+}
+.card p {
+    align-self: flex-end;
+    
 }
