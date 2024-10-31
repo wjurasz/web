@@ -1,6 +1,4 @@
-/* zad1 */
-
-/* telefon */
+/* Phone */
 @media (max-width: 650px){
     nav {
         flex-direction: column;
@@ -15,7 +13,7 @@
       body {background-color: black;}
 }
 
-/* komputer */
+/* Computer */
 @media (min-width: 1201px){
     .img-container {
         display: grid;
@@ -39,7 +37,7 @@
      
     
 }
-/* tablet */
+/* Tablet */
 @media (min-width: 651px) and (max-width:1200px){
     nav {
         flex-direction: column;
